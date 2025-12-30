@@ -25,6 +25,23 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Root route
+app.get('/', (req, res) => {
+    res.json({
+        success: true,
+        message: 'University Project Management API',
+        version: '1.0.0',
+        endpoints: {
+            health: '/api/health',
+            auth: '/api/auth',
+            students: '/api/students',
+            professors: '/api/professors',
+            hod: '/api/hod',
+            director: '/api/director'
+        }
+    });
+});
+
 // Health check endpoint
 app.get('/api/health', (req, res) => {
     res.json({
