@@ -1,4 +1,4 @@
-#ProjectSphere - University Project Management System
+# ProjectSphere - University Project Management System
 
 A comprehensive MERN stack application for managing university academic projects with role-based dashboards.
 
