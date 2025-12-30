@@ -1,0 +1,52 @@
+.card {
+    padding: var(--spacing-lg);
+    transition: box-shadow var(--transition-base);
+}
+
+.card-student {
+    border-left: 3px solid var(--color-student);
+}
+
+.card-professor {
+    border-left: 3px solid var(--color-professor);
+}
+
+.card-hod {
+    border-left: 3px solid var(--color-hod);
+}
+
+.card-director {
+    border-left: 3px solid var(--color-director);
+}
+
+.card-student:hover {
+    box-shadow: var(--shadow-glow-student);
+}
+
+.card-professor:hover {
+    box-shadow: var(--shadow-glow-professor);
+}
+
+.card-hod:hover {
+    box-shadow: var(--shadow-glow-hod);
+}
+
+.card-director:hover {
+    box-shadow: var(--shadow-glow-director);
+}
+
+.card-header {
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.card-body {
+    flex: 1;
+}
+
+.card-footer {
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--border-color);
+    margin-top: var(--spacing-md);
+}

@@ -1,0 +1,120 @@
+.evaluation-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.eval-project-info {
+    padding: var(--spacing-md);
+    background: var(--bg-tertiary);
+    border-radius: var(--border-radius-md);
+}
+
+.eval-project-info h4 {
+    font-size: var(--font-size-md);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.eval-project-info p {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+}
+
+.criteria-section {
+    padding: var(--spacing-lg);
+    background: var(--bg-tertiary);
+    border-radius: var(--border-radius-md);
+}
+
+.criteria-title {
+    font-size: var(--font-size-md);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-lg);
+}
+
+.criteria-item {
+    margin-bottom: var(--spacing-md);
+}
+
+.criteria-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-xs);
+}
+
+.criteria-label {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+}
+
+.criteria-score {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-professor);
+}
+
+.criteria-slider {
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--bg-secondary);
+    appearance: none;
+    cursor: pointer;
+}
+
+.criteria-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--gradient-professor);
+    cursor: pointer;
+    box-shadow: var(--shadow-md);
+}
+
+.criteria-slider::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--gradient-professor);
+    cursor: pointer;
+    border: none;
+    box-shadow: var(--shadow-md);
+}
+
+.total-score {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: rgba(16, 185, 129, 0.1);
+    border-radius: var(--border-radius-md);
+    margin-top: var(--spacing-lg);
+    color: var(--color-professor);
+}
+
+.total-label {
+    flex: 1;
+    font-weight: 500;
+}
+
+.total-value {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.project-student {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-size: var(--font-size-sm);
+    color: var(--text-muted);
+}

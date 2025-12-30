@@ -1,0 +1,222 @@
+.project-details-page {
+    --primary: var(--color-student);
+    --primary-light: var(--color-student-light);
+    --primary-dark: var(--color-student-dark);
+
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.details-header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-title-large {
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-meta-row {
+    display: flex;
+    gap: 2rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.description-content {
+    white-space: pre-wrap;
+    /* Transforms newlines to breaks and preserves spaces */
+    color: var(--text-primary);
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-family: inherit;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.member-avatar,
+.professor-avatar {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-light);
+    color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+.member-info,
+.prof-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.member-name,
+.prof-name {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.member-role,
+.prof-email {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.full-width {
+    width: 100%;
+    justify-content: center;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tag-pill {
+    padding: 0.25rem 0.75rem;
+    background: rgba(99, 102, 241, 0.1);
+    color: #818cf8;
+    border-radius: 100px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.evaluation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.total-score {
+    display: flex;
+    align-items: baseline;
+    gap: 0.25rem;
+}
+
+.score {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.max-score {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.criteria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.criteria-item {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.criteria-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.criteria-progress {
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.criteria-bar {
+    height: 100%;
+    background: var(--primary);
+    border-radius: 3px;
+}
+
+.criteria-value {
+    font-weight: 600;
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+.feedback-box {
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.feedback-box h4 {
+    color: #10b981;
+    margin-bottom: 0.5rem;
+}

@@ -1,0 +1,37 @@
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.form-input.has-icon {
+    padding-left: 40px;
+}
+
+.form-input.has-error {
+    border-color: var(--status-rejected);
+}
+
+.form-input.has-error:focus {
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.3);
+}
+
+.required-mark {
+    color: var(--status-rejected);
+    margin-left: 4px;
+}
+
+.form-error {
+    font-size: var(--font-size-xs);
+    color: var(--status-rejected);
+    margin-top: var(--spacing-xs);
+}
