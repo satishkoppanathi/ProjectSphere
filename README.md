@@ -1,4 +1,4 @@
-# University Project Management System
+#ProjectSphere - University Project Management System
 
 A comprehensive MERN stack application for managing university academic projects with role-based dashboards.
 
@@ -61,13 +61,6 @@ npm install
 
 4. **Configure environment**
 
-Edit `backend/.env`:
-```env
-PORT=5000
-MONGODB_URI=mongodb://localhost:27017/university_project_management
-JWT_SECRET=your_super_secret_key
-JWT_EXPIRE=7d
-```
 
 5. **Start MongoDB** (if local)
 ```bash
